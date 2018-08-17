@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./Assets/Images/Index/vg.png">
+
+  <title>Vipul Goyal</title>
+  <link rel="stylesheet" href="./Scripts/Lib/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Scripts/Lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./Content/Index.css">
+  
+
+</head>
+<body>
+<header id="header"></header><!--I inject the Header but idk why ItSnot working  -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top  Trans">
+  <a class="navbar-brand" href="#"><img src="./Assets/Images/Index/vg.png" class="Logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./index.html">
+          <i class="fa fa-home fa-lg"></i> Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#About">
+          <i class="fa fa-info-circle fa-lg"></i> About</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#Contact">
+              <i class="fa fa-phone fa-lg"></i> Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Projects">
+            <i class="fa fa-project fa-lg"></i> Projects</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+  <div class="Name-Top" onload="setbackground();">
+    <marquee direction="" behavior="alternate" onmousemove="this.stop();" onmouseout="this.start();">
+      <p id="Com"></p><div align="center">
+    </marquee>
+  </div>
+  <video autoplay muted loop id="myVideo">
+    <source src="./Assets/Images/Index/The Views Are Different Here _ Tourism Toronto.mp4" type="video/mp4">
+  </video>
+
+  <div  >
+      <div class="quote"> 
+        <p class="quote-head"id="quote-head"></p>
+      <iframe class="if" src="http://widget.calendarlabs.com/v1/quot.php?cid=101&uid=1337892660&c=random&l=en&cbg=FFFFFF&cb=1&cbc=000000&cf=calibri&cfg=000000&qfs=bi&qta=center&tfg=000000&tfs=bi&afc=000000&afs=i"></iframe>
+    </div>
+    <div class="KnowMe">
+      <button type="button" class=" KnowMeBtn btn btn-outline-primary"><a href="#About">Know More About Vipul</a></button>
+    </div>
+    <div class="Intro"></div>
+    <div class="IntroWeb">
+      <p id="Image">
+    </div>
+  </div>
+  <div class="AboutMe" id="About">
+    <header class="AboutMe-title">
+      Vipul Goyal
+    </header>
+    <div class="Color"></div>
+    <div class="AboutMe-text" >
+      <p class="Greet">
+        <i>Hello...Good to see you here</i>
+      </p>
+      <div>
+     <div class="About-text" id="About-text"></div> 
+     <div class="About-Pic"><img src="./Assets/Images/AboutMe/Me.jpg" class="AboutMe-Me"></div>
+     
+    </div>
+    </div>
+  </div>
+
+  <div class="Contact-Us" id="Contact">
+      <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              <div class="card">
+                <div class="card-header  text-white bg-dark mb-3">
+                  <h1 class="card-title Contact-Head">Contact Me</h1>
+                </div>
+      
+      
+      
+                <div class="card-body">
+                 <!--<p id="Notev" class="RqsNote"></p>-->
+                  <h4 class="card-subtitle mb-2 text-muted">* All Fields should be filled</h4>
+                  <form id="MyForm">
+                    <div class="form-group">
+                      <label for="FullName">Full Name</label>
+                      <input type="text" class="form-control form-control-lg" id="FullName" name="FullName" placeholder="Enter Your Name" required>
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="ContactNumber">Contact Number</label>
+                      <input type="text" class="form-control form-control-lg" id="ContactNumber" name="ContactNumber" placeholder="Enter Your Contact Number"
+                        required>
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="EmailAddress">Email address</label>
+                      <input type="email" class="form-control form-control-lg" id="EmailAddress" name="EmailAddress" placeholder="Enter Your Email Address"
+                        required>
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="Message">Enter Message</label>
+                      <textarea class="form-control form-control-lg" id="Message" name="Message" rows="3" required></textarea>
+                    </div>
+      
+                    <button type="button"onclick="myFunction()" class="btn btn-primary btn-lg">Send</button>
+                    <a class="btn btn-primary btn-lg" href="./index.html" role="button">Cancel</a>
+                  </form>
+                  <p id="demo"></p>
+                </div>
+      
+              </div>
+      
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="Pro" id="Projects">
+    Here is the projects page.
+    <br>
+    <br>
+    <br>
+    <p class="Pro_Para1" id="Pro_Para1"></p>
+    <img src="./Assets/Images/Projects/hope.jpg" class="hope" >
+  </div>
+  <footer></footer>
+  <script src="./Scripts/Lib/jquery/jquery-3.3.1.min.js"></script>
+  <script src="./Scripts/Lib/dist/js/bootstrap.min.js"></script>
+  <script src="./Scripts/index.js"></script>
+</body>
+
+</html>

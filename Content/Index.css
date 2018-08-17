@@ -1,0 +1,303 @@
+#myVideo
+{
+height: 100%;
+width: 100%;
+filter:opacity(50%);
+}
+.Logo
+{
+    height: 23px;
+    width: 50px;
+}
+body{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-color: rgba(0, 0, 0);
+}
+.Trans
+{
+background-color: rgba(0, 0, 0, 0.6);
+border: 0px;
+}
+.Trans ul li a
+{
+    color: white;
+}
+.Name-Top
+{
+    margin-left: auto;
+    margin-right: auto;
+    height:20px;
+    width: 100%;
+    animation: wlcm 5s infinite; 
+    font-size: 20px;
+}
+@keyframes wlcm{
+    from
+    {
+        color:greenyellow;
+        visibility:visible;
+    }
+    to
+    {
+        color: red;
+        visibility: hidden;
+    }
+}
+.quote
+{
+  
+    margin-left: 1.5%;
+    position: absolute;
+    top: 20%;
+visibility: hidden;
+    background-color:rgba(0, 0, 0,0.6);
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+
+    
+}
+.quote-head
+{
+    font-size: 2em;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align-last: center;
+}
+.if
+{
+
+border: none;
+height: 500px;
+width: 182px;
+
+
+}
+
+@media (min-width:910px)
+{
+    .quote
+    {
+        visibility:visible;
+    }
+    .Intro
+    {
+        visibility: hidden;
+    }
+
+}
+@media(min-width:910px)
+{
+    .IntroWeb
+    {
+        visibility: visible;
+    }
+}
+@media(max-width:909px)
+{
+    .IntroWeb
+    {
+        visibility: hidden;
+    }
+}
+.Intro
+{
+    margin-left: 1.5%;
+    position: absolute;
+    top: 20%;
+    background-color:rgba(0, 0, 0,0.6);
+    border-radius: 10px;
+    width: 97%;
+    height: 70%;
+}
+.IntroWeb
+{
+    margin-left: 55%;
+    position: absolute;
+    top: 15%;
+    background-color:rgba(21, 64, 99, 0.521);
+    border-radius: 10px;
+    width: 40%;
+    height: 80%;
+    background-image:url(../Assets/Images/Index/Intro.jpg);
+    filter: opacity(60%);
+    background-repeat: no-repeat;
+    animation: Dimming 600ms forwards;
+}
+@keyframes Dimming
+{
+    from
+    {
+        filter:opacity(100%);
+    }
+    to 
+    {
+        filter: opacity(60%);
+    }
+}
+.IntroWeb:hover
+{
+   
+    animation: Glowing 600ms forwards;
+}
+@keyframes Glowing {
+   from
+   {
+       filter: opacity(60%)
+   }
+   to 
+   {
+    filter: opacity(100%)
+   }
+}
+
+.POP
+{
+    height:300px;
+    width: 350px;
+    border-radius: 20%;
+
+}
+.KnowMe
+{
+    margin-left: 8.5%;
+    position: absolute;
+    top: 75%;
+
+}
+.KnowMeBtn
+{
+    width: 500px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 900;
+    
+}
+.KnowMeBtn:hover
+{
+    background-color: white;
+}
+.Color
+{
+    border:none;
+    background-color: blue;
+    height: 5px;
+    width: 100%;
+}
+.AboutMe
+{
+    background-color: white;
+    background-image: url(../Assets/Images/AboutMe/BG.jpg);
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+.AboutMe-title
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 900;
+
+    
+}
+.Greet
+{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 3em;
+    color: black;
+}
+  
+.AboutMe-text
+{
+    height: 720px;
+    font-size: 2em;
+
+}
+.About-text
+{
+    position: absolute;
+    width: 50%;
+    font-size: 1em;
+    
+}
+.About-Pic
+{
+    position: absolute;
+    margin-top:0px;
+    margin-left: 60%;
+}
+.AboutMe-Me
+{
+    height: 400px;
+    width: 450px;
+    border-radius: 50%;
+    animation: Boder-Back 1s forwards;
+}
+.AboutMe-Me:hover
+{
+ animation: Boder 1s forwards;
+}
+@keyframes Boder
+{
+    from 
+    {
+        border-radius: 50%;
+    }
+    to 
+    {
+        border-radius: 0%;
+    
+    }
+}
+@keyframes Boder-Back
+{
+    from 
+    {
+        border-radius: 0%;
+    }
+    to 
+    {
+        border-radius: 50%;
+    }
+}
+.Contact-Us
+{
+ text-align: center;
+ background-color:white;
+ background-position: center;
+ background-size: cover;
+
+ 
+}
+.Contact-Head
+{
+    height: 20px;
+    text-align: top;
+}
+.Pro
+{
+    background-image: url(../Assets/Images/Projects/Pro.jpg);
+    height: 650px;
+    width: 100%;
+}
+.Pro_Para1
+{
+    color:black;
+    font-weight: bolder;
+    font-size:28px;
+    text-align: center;
+
+
+}
+.hope
+{
+    height: 100%;
+    width: 100%;
+}
